@@ -24,7 +24,7 @@
 		<java.version>1.8</java.version>
 		<mapstruct.version>1.0.0.Final</mapstruct.version>
 		<log4j.version>1.2.17</log4j.version>
-		<start-class>com.jcg.spring.batch.SpringBatchApplication</start-class>
+		<start-class>br.com.spring.batch.SpringBatchApplication</start-class>
 	</properties>
 
 	<dependencies>
@@ -32,6 +32,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-batch</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -74,6 +78,10 @@
 		</dependency>
 		<!-- jwt -->
 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
 			<version>${jjwt.version}</version>
@@ -103,6 +111,7 @@
 			<version>2.6.1</version>
 			<scope>compile</scope>
 		</dependency>
+
 		<!-- commlanguageslang -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
